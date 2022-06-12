@@ -1,0 +1,376 @@
+*{
+    font-family: 'Inter', sans-serif;
+    color: black;
+}
+
+html, body{
+    padding: 0;
+    margin: 0;
+    box-shadow: none;
+    overflow-x: hidden;
+}
+
+h2{
+    /* text-decoration: underline; */
+    font-weight: bold;
+}
+
+p{
+    font-size: 20px;
+}
+
+.bg-gradient-top{
+    background-image: linear-gradient(to top, #48c6ef 0%, #6f86d6 100%);    
+}
+
+.bg-gradient-left{
+    background-image: linear-gradient(to left, #48c6ef 0%, #6f86d6 100%);    
+}
+
+#column{
+    margin-top: 3rem !important;
+}
+
+#btn-mode{
+    position: fixed;
+    width:50px;
+	height:50px;
+	bottom:40px;
+	right:40px;
+	border-radius:50px;
+	text-align:center;
+}
+
+.name{
+    color: hsl(220, 89%, 56%);
+    font-weight: bold;
+}
+
+@media (max-width: 375px) {
+    #column{
+        margin-top: 0.5rem !important;
+    }
+}
+
+/* JUMBOTRON */
+
+#name{
+    font-weight: 800;
+    font-size: 110px;
+    /* color: #6f86d6; */
+}
+
+#hobby{
+    left: 270px;
+    font-weight: 600;
+    font-size: 35px;
+    line-height: 53px;
+}
+
+#jumbotron #line{
+    width: 60%;
+    margin-bottom: 20px;
+    height: 10px;
+    background-image: linear-gradient(to left, #48c6ef 0%, #6f86d6 100%);    
+}
+
+.nav-link, .navbar-brand, .nav-link:hover, .navbar-brand:hover{
+    color: black;
+    font-size: 20px;
+}
+
+.center{
+    margin: 0;
+    width: 75%;
+    padding: 10px;
+}
+
+@media (min-width: 768px) {
+    #jumbotron{
+        height: 100vh;
+    }
+
+    .center{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+    }
+
+}
+
+
+/* @media (min-width: 768px) { 
+    h2{
+        text-align: center;
+    }
+} */
+
+
+@media (max-width: 992px) { 
+    #name{
+        font-size: 90px;
+    }
+
+    #hobby{
+        font-size: 30px;
+    }
+
+    #jumbotron #line{
+        width: 70%;
+        margin-bottom: 10px;
+    }
+
+    .center{
+        width: 70%;
+    }
+}
+
+@media (max-width: 768px) { 
+    #greet{
+        margin-top: 2rem;
+    }
+
+    #name{
+        font-size: 70px;
+    }
+
+    #hobby{
+        font-size: 30px;
+    }
+
+    #jumbotron #line{
+        width: 85%;
+        margin-bottom: 10px;
+    }
+
+    .center{
+        width: 80%;
+        margin: auto;
+    }
+}
+
+@media (max-width: 576px) { 
+    #name{
+        font-size: 60px;
+    }
+
+    #jumbotron #line{
+        width: 80%;
+        height: 7px;
+    }
+
+    .center{
+        width: 85%;
+    }
+}
+
+@media (max-width: 375px) { 
+    #name{
+        font-size: 50px;
+    }
+
+    #greet{
+        font-size: 25px;
+        margin-top: 1rem;
+    }
+
+    .center{
+        width: 90%;
+    }
+
+    #hobby{
+        font-size: 25px;
+        line-height: 1.3;
+    }
+
+    #jumbotron #line{
+        width: 75%;
+    }
+}
+
+
+
+
+/* ABOUT */
+
+#about{
+    margin: auto;
+    width: 90%;
+}
+
+#photo{
+    width: 80%;
+    margin: auto;
+}
+
+#photo #img{
+    margin: auto;
+    width: 250px;
+    border-radius: 50%;
+    padding: 15px;
+}
+
+
+#about-me{
+    margin-top: 1rem !important;
+    width: 92.5%;
+    margin: auto;
+}
+
+@media (min-width: 992px) { 
+    #photo{
+        margin-top: 50px;
+    }
+
+    #photo #img{
+        margin-top: -50px;
+    }
+}
+
+@media (max-width: 992px) { 
+    #photo #img{
+        width: 200px;
+    }
+
+    #about-me{
+        margin-top: 0rem !important;
+    }
+}
+
+@media (max-width: 768px) { 
+    #photo{
+        padding-bottom: 30px;
+        padding-top: 30px;
+    }
+
+    #photo #img{
+        width: 200px;
+    }
+}
+
+
+@media (max-width: 576px) { 
+    #about-me{
+        margin-top: 3rem !important;
+    }
+
+    #about{
+        width: 100%;
+    }
+
+    #photo{
+        width: 100%;
+        padding-bottom: 55px;
+        padding-top: 55px;
+        background-image: linear-gradient(to top, #48c6ef 0%, #6f86d6 100%);    
+    }
+
+    #photo #img{
+        width: 80%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 0%;
+        padding: 0;
+    }
+}
+
+/* Skills */
+.skill{
+    box-sizing: border-box;
+    font-size: 28px;
+    width: 218px;
+    height: 53px;
+    border: 1px solid #000000;
+    border-radius: 90px;
+}
+
+
+/* EDUCATION */
+#education li .school-name{
+    font-size: 22px;
+}
+
+#education li .time{
+    font-size: 18px;
+    color: hsl(220, 89%, 56%);
+}
+
+#education li .school-loc{
+    font-size: 20px;
+}
+
+#education li{
+    margin-bottom: 20px;
+}
+
+#education .school-name{
+    font-weight: bold;
+}
+
+
+/* PROJECTS */
+.my-btn{
+    border-radius: 20px;
+    width: 100%;
+    height: 40px;
+}
+
+.project img{
+    border-radius: 5px;
+}
+
+@media (max-width: 375px) {
+    .project{
+        width: 95%;
+        margin: auto;
+    }
+
+    #projects{
+        margin-top: 0.5rem !important;
+    }
+}
+
+/* NOTES */
+.notes{
+    background-color: hsla(220, 89%, 56%, 0.15);
+    border: 3px solid hsl(220, 89%, 56%);
+    padding: calc(0.75 * 1em);
+    font-size: 18px;
+    margin-bottom: 1rem !important;
+}
+
+#note .notes{
+    width: 85%;
+    margin-bottom: 0.5rem !important;
+}
+
+@media (max-width: 576px){
+    #note .notes{
+        width: 100%;
+    }
+}
+
+.notes-title{
+    font-size: 20px;
+}
+
+/* GALLERY */
+#gallery img{
+    width: 100%;
+    height: 200px;
+    border-radius: 5px;
+    margin-bottom: 1.5rem !important;
+    object-fit: none;
+}
+
+@media (max-width: 375px){
+    #gallery img{
+        margin-bottom: 1rem !important;
+    }
+}
+
+
+
